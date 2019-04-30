@@ -122,6 +122,7 @@ public class PlayerMovement : MonoBehaviour
         
         if (playertransfom.position.y < -1)
         {
+            
             showMenu();
         }
         

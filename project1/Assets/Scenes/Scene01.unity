@@ -691,6 +691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startOffset: {x: 0, y: 2, z: -2}
   player: {fileID: 364739075}
+  cameraScript: {fileID: 534669906}
 --- !u!1 &1298966725
 GameObject:
   m_ObjectHideFlags: 0
