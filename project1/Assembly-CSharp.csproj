@@ -62,7 +62,9 @@
   <ItemGroup>
     <Compile Include="Assets\Packages\GrassRoadRace\Script\CameraMove.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\playercollision.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Restart.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\TileManager.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
