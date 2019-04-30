@@ -21,15 +21,15 @@ public class PlayerMovement : MonoBehaviour
     public Text WinText;
     public PlayerMovement movement;
     public Text gameOver;
+    public Score scoreScript;
 
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
-        button = GameObject.Find("Restart1");
         button.SetActive(false);
-        restartText.text = "" ;
+        //restartText.text = "" ;
 
         
     }
@@ -119,25 +119,25 @@ public class PlayerMovement : MonoBehaviour
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
 
-
+        
         if (playertransfom.position.y < -1)
         {
             showMenu();
         }
+        
     }
-
+    
     void showMenu()
     {
         RenderSettings.fogColor = Color.black;
         RenderSettings.fogDensity = 0.5f;
         RenderSettings.fog = true;
 
-
-        
-        restartText.text = "Restart";
         button.SetActive(true);
+        restartText.text = "Restart";
         gameOver.text = "GameOver";
-               
+
         movement.enabled = false;
     }
+    
 }

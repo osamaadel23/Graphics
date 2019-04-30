@@ -206,6 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 364739075}
   score: {fileID: 6043820}
+  scoreScript: {fileID: 6043822}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,11 +518,12 @@ MonoBehaviour:
   jumpSpeed: 6
   rb: {fileID: 364739073}
   playertransfom: {fileID: 364739075}
-  button: {fileID: 0}
+  button: {fileID: 1877831086}
   restartText: {fileID: 211942444}
   WinText: {fileID: 1298966727}
-  movement: {fileID: 0}
-  gameOver: {fileID: 0}
+  movement: {fileID: 364739071}
+  gameOver: {fileID: 1516393185}
+  scoreScript: {fileID: 0}
 --- !u!143 &364739072
 CharacterController:
   m_ObjectHideFlags: 0
@@ -576,7 +578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 364739071}
   gameOver: {fileID: 1516393185}
-  button: {fileID: 1877831086}
+  btn: {fileID: 1877831086}
   restartText: {fileID: 211942444}
   playertransform: {fileID: 364739075}
 --- !u!65 &364739077
